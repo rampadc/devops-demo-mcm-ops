@@ -1,0 +1,65 @@
+apiVersion: app.ibm.com/v1alpha1
+kind: Subscription
+metadata:
+  name: bluecompute-web-dev
+  labels:
+    app: "bluecompute-app"
+spec:
+  channel: dev/bluecompute-web-dev
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: dev
+---
+apiVersion: app.ibm.com/v1alpha1
+kind: Subscription
+metadata:
+  name: bluecompute-catalog-dev
+  labels:
+    app: "bluecompute-app"
+spec:
+  channel: dev/bluecompute-catalog
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: dev
+---
+apiVersion: app.ibm.com/v1alpha1
+kind: Subscription
+metadata:
+  name: bluecompute-customer-dev
+  labels:
+    app: "bluecompute-app"
+spec:
+  channel: dev/bluecompute-customer
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: dev
+---
+apiVersion: app.ibm.com/v1alpha1
+kind: Subscription
+metadata:
+  name: bluecompute-inventory-dev
+  labels:
+    app: "bluecompute-app"
+spec:
+  channel: dev/bluecompute-inventory
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: dev
+---
+apiVersion: app.ibm.com/v1alpha1
+kind: Subscription
+metadata:
+  name: bluecompute-orders-dev
+  labels:
+    app: "bluecompute-app"
+spec:
+  channel: dev/bluecompute-orders
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: dev
+---

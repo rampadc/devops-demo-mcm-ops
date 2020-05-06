@@ -1,0 +1,44 @@
+apiVersion: app.ibm.com/v1alpha1
+kind: Channel
+metadata:
+  name: bluecompute-web-qa
+  namespace: qa
+spec:
+    type: GitHub
+    pathname: https://github.com/hollisc/bluecompute-web-ops-qa.git
+---
+apiVersion: app.ibm.com/v1alpha1
+kind: Channel
+metadata:
+  name: bluecompute-catalog
+  namespace: qa
+spec:
+    type: GitHub
+    pathname: https://github.com/hollisc/bluecompute-catalog-ops.git
+---
+apiVersion: app.ibm.com/v1alpha1
+kind: Channel
+metadata:
+  name: bluecompute-customer
+  namespace: qa
+spec:
+    type: GitHub
+    pathname: https://github.com/hollisc/bluecompute-customer-ops.git
+---
+apiVersion: app.ibm.com/v1alpha1
+kind: Channel
+metadata:
+  name: bluecompute-inventory
+  namespace: qa
+spec:
+    type: GitHub
+    pathname: https://github.com/hollisc/bluecompute-inventory-ops.git
+---
+apiVersion: app.ibm.com/v1alpha1
+kind: Channel
+metadata:
+  name: bluecompute-orders
+  namespace: qa
+spec:
+    type: GitHub
+    pathname: https://github.com/hollisc/bluecompute-orders-ops.git

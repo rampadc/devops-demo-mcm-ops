@@ -1,0 +1,14 @@
+apiVersion: app.ibm.com/v1alpha1
+kind: PlacementRule
+metadata:
+  name: dev
+  namespace: dev
+  labels:
+    release: "bluecompute"
+spec:
+  clusterReplicas: 1
+  clusterConditions:
+    - type: OK
+  clusterLabels:
+    matchLabels:
+      environment: Dev
